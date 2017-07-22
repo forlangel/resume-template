@@ -1,0 +1,88 @@
+body{
+    background: #F2F2F5;
+    line-height: 200%;
+}
+.section-header{
+    background: #171717;
+}
+.img-header{
+    width: 100px;
+    height: auto;
+}
+.text-header{
+    color: #ffffff;
+}
+.sidebar-header,.sidebar-info,.sidebar-link,.sidebar-school{
+    background: #ffffff;
+    margin-bottom: 20px;
+}
+.section-header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sidebar-item{
+    padding: 10px 30px;
+
+}
+.info-item{
+    padding: 5px 0;
+}
+.content-container{
+    background: #ffffff;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+}
+.profile-item{
+    padding: 15px 0;
+}
+.project-item{
+    padding-bottom: 15px;
+}
+.progress {
+    height: 10px;
+}
+::-webkit-selection {
+    color: #fff;
+    background: #000000;
+}
+::-moz-selection {
+    color: #fff;
+    background: #000000;
+}
+::selection {
+    color: #fff;
+    background: #000000;
+}
+a {
+    color: #171717;
+    text-decoration:underline;
+}
+li{
+    padding-bottom: 5px;
+}
+.list-group-item{
+    text-decoration: none;
+}
+.project-item h4{
+    font-weight: 600;
+}
+.list-group > .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+    border: 0px solid #dddddd;
+}
+.section-link{
+    padding-top: 10px;
+}
+.section-reward{
+    padding-bottom: 20px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right:10px;
+}
