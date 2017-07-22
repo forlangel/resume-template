@@ -27,21 +27,19 @@
 </head>
 <body>
 <div class="container">
-    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
         <div class="sidebar-header">
             <div class="section-header text-center">
                 <img src="images/head.jpg" alt="head" class="img-circle img-header">
                 <h2 class="text-center text-header">邵帅</h2>
-                <p style="padding: 10px 10px;color: white">我是一名热爱前端开发的大四学生，目前正在寻找前端工程师岗位的实习机会。</p>
+                <p style="padding: 10px 10px;color: white">求职目标：前端开发工程师</p>
             </div>
-            <div class="section-nav">
+            <div class="section-nav hidden-print">
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <li class="fa fa-cube"></li>&nbsp;PDF简历</a>
-                    <a href="#likesjob" class="list-group-item">
-                        <li class="fa fa-address-card-o"></li>&nbsp;求职目标</a>
                     <a href="#info" class="list-group-item">
-                        <li class="fa fa-bookmark-o"></li>&nbsp;个人信息</a>
+                        <li class="fa fa-bookmark-o"></li>&nbsp;个人简介</a>
                     <a href="#skills" class="list-group-item">
                         <li class="fa fa-anchor"></li>&nbsp;技能水平</a>
                     <a href="#project" class="list-group-item">
@@ -133,7 +131,7 @@
                 </ul>
             </div>
         </div>
-        <div class="sidebar-link">
+        <div class="sidebar-link hidden-print">
             <div class="section-link text-center">
                 <h4 class="text-center">链接</h4>
                 <div class="list-group">
@@ -155,18 +153,17 @@
                 </div>
             </div>
         </div>
+        <div class="visible-print-block">
+            <h6>
+                <p class="text-center">网页版简历：http://resume.mayuko.cn/</p>
+            </h6>
+        </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
         <div class="content-container">
-            <div class="section-likesjob profile-item" id="likesjob">
-                <h3>
-                    <li class="fa fa-address-card-o">&nbsp;求职目标</li>
-                </h3>
-                <p style="color: red">前端开发工程师</p>
-            </div>
             <div class="section-info profile-item" id="info">
                 <h3>
-                    <li class="fa fa-bookmark-o">&nbsp;个人信息
+                    <li class="fa fa-bookmark-o">&nbsp;个人简介
                 </h3>
                 <p>
                     从2012年开始接触编程，2015年开始接触前后端开发学习，并制作了多个个人项目，在我校拥有4W+粉丝的微信公众号烟雨楼台中负责微信开发及后台维护，参加过校级、省级和国家级编程大赛并取得了优异成绩。</p>
@@ -207,54 +204,64 @@
                 </h3>
                 <h4 class="text-center">线上项目</h4>
                 <div class="project-item">
-                    <h4>烟台大学教务系统</h4>
-                    <p>项目地址：<a href="http://www.ytuyylt.com/wechat/yyltjiaowu/?openid=test" target="_blank">http://www.ytuyylt.com/wechat/yyltjiaowu</a>
-                    </p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h4>烟台大学教务系统</h4>
+                        </div>
+                        <div class="col-xs-6" style="text-align: right">
+                            <a href="http://www.ytuyylt.com/wechat/yyltjiaowu/?openid=test" target="_blank">http://www.ytuyylt.com/wechat/yyltjiaowu</a>
+                        </div>
+                    </div>
                     <p>
                         为了解决同学在校外使用学校内教务系统的局限性，通过模拟登陆学校教务系统获取数据并进行整理，让同学在微信中就可以查询课表、期末成绩、空闲教室、考试安排等。目前上线半年多PV总访问量已超过<i>350000+</i>，日平均PV量<i>700+</i>，寒暑假单日PV峰值达<i>10000+</i>。</p>
                     <p>前端使用WEUI保证与微信一致显示效果。后端使用<code>PHP</code>，通过<code>cURL</code>模拟用户登录获取信息。</p>
                 </div>
                 <div class="project-item">
-                    <h4>课表微信小程序</h4>
-                    <p><a href="" data-toggle="modal" data-target="#weapp">项目地址</a>：<a href="http://kb.mayuko.cn/"
-                                                                                       target="_blank">http://kb.mayuko.cn/</a>
-                    </p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h4>课表微信小程序</h4>
+                        </div>
+                        <div class="col-xs-6" style="text-align: right">
+                            <a href="http://kb.mayuko.cn/" target="_blank">http://kb.mayuko.cn/</a>
+                        </div>
+                    </div>
                     <p>该项目基于微信小程序<i>MINA</i>框架的<i>WXML</i>、<i>WXSS</i>，视图层采用<i>Flex</i>弹性布局，逻辑层采用模块化卡片式的开发，项目使用学校公开的课表信息，使用<code>Python</code>进行数据整理，后端采用
                         <code>Mysql</code>进行数据存储，部署在腾讯云服务器上。方便在校生进行课程查询。</p>
                 </div>
-                <div class="modal fade" id="weapp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                        aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">课表微信小程序</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/kb-qr.jpg" alt="课表" class="img-responsive">
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <h4 class="text-center">个人项目</h4>
                 <div class="project-item">
-                    <h4>VSCOM图片分享社区</h4>
-                    <p>项目地址：<a href="http://vscom.mayuko.cn/" target="_blank">http://vscom.mayuko.cn/</a></p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h4>VSCOM图片分享社区</h4>
+                        </div>
+                        <div class="col-xs-6" style="text-align: right">
+                            <a href="http://vscom.mayuko.cn/" target="_blank">http://vscom.mayuko.cn/</a>
+                        </div>
+                    </div>
                     <p>一个图片分享社区。后端使用原生<code>PHP</code>，数据库使用<code>Mysql</code>，前端使用瀑布流方式布局，使用MVC模式进行开发，支持响应式。实现了用户的登录、注册以及文件的上传、管理。</p>
                 </div>
 
                 <div class="project-item">
-                    <h4>API Center</h4>
-                    <p>项目地址：<a href="https://api.mayuko.cn/" target="_blank">https://api.mayuko.cn/</a></p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h4>API Center</h4>
+                        </div>
+                        <div class="col-xs-6" style="text-align: right">
+                            <a href="https://api.mayuko.cn/" target="_blank">https://api.mayuko.cn/</a>
+                        </div>
+                    </div>
                     <p>
                         根据日常需求制作的各种接口，并开放让所有用户进行使用，网页前端使用<code>Bootstrap</code>框架布局，并修改部分样式，后端使用原生<code>PHP</code>，数据库使用<code>Mysql</code>，采用<code>Nginx</code>的<i>rewrite</i>规则重写URL，支持<i>HTTPS</i>。目前调用量已接近3w。</p>
                 </div>
                 <div class="project-item">
-                    <h4>个人博客</h4>
-                    <p>地址：<a href="https://blog.mayuko.cn/" target="_blank">https://blog.mayuko.cn/</a></p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h4>个人博客</h4>
+                        </div>
+                        <div class="col-xs-6" style="text-align: right">
+                            <a href="https://blog.mayuko.cn/" target="_blank">https://blog.mayuko.cn/</a>
+                        </div>
+                    </div>
                     <p>
                         这是我的个人博客，平时写的一些代码都会在这里分享与总结，搭建并维护过如<i>Wordpress</i>、<i>hexo</i>的个人技术博客，此外还开发过一些开源的小项目、插件等，并将其代码托管至<code>Github</code>，博客平均日PV100+。</p>
                 </div>
@@ -310,15 +317,16 @@
         </div>
     </div>
     <div class="footer">
-        <h6>
-            <p class="text-center">最后更新于1500524040(UNIX),Made with <font style="color: red">♥ </font>&nbsp;<a href="">PDF下载</a>
-                Open Source in <a
-                        href="https://github.com/mayuko2012/resume" target="_blank">Github</a>
-            </p>
-        </h6>
+        <div class="hidden-print">
+            <h6>
+                <p class="text-center">最后更新于1500524040(UNIX),Made with <font style="color: red">♥ </font>&nbsp;<a href="">PDF下载</a>
+                    Open Source in <a
+                            href="https://github.com/mayuko2012/resume" target="_blank">Github</a>
+                </p>
+            </h6>
+        </div>
     </div>
 </div>
-
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
